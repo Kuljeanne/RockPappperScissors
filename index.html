@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, ножницы, бумага</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e96c36ecfa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app">
+
+    </div>
+    <script>
+        window.application = {
+            blocks: {},
+            screens: {},
+            renderScreen: function (screenName) {
+                if (!this.screens[screenName]) {
+                    console.log(`Страницы ${screenName} не существует`);
+                    return
+                }
+                this.screens[screenName]()
+            },
+            renderBlock: function (blockName, container) {
+                if (!this.blocks[blockName]) {
+                    console.log(`Блока ${blockName} не существует`);
+                    return
+                }
+                this.blocks[blockName](container)
+            },
+            timers: []
+        };
+        const backURL = 'https://skypro-rock-scissors-paper.herokuapp.com/';
+    </script>
+    <script src="src/js/helpers/template-ing.js"></script>
+    <script src="src/js/helpers/request.js"></script>
+    <script src="src/js/screens/buttons.js"></script>
+    <script src="src/js/screens/logIn.js"></script>
+    <script src="src/js/screens/lobby.js"></script>
+    <script src="src/js/screens/waitingGame.js"></script>
+    <script src="src/js/screens/yourMove.js"></script>
+    <script src="src/js/screens/waitingEnemyMove.js"></script>
+    <script src="src/js/screens/win.js"></script>
+    <script src="src/js/screens/loss.js"></script>
+    <script>
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

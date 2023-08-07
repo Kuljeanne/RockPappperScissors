@@ -1,0 +1,28 @@
+.waiting{
+    position: relative;
+}
+.fa-spinner{
+    position: absolute;
+    font-size: 10rem;
+    position: absolute;
+    font-size: 12rem;
+    top: 40px;
+    left: 120px;
+    color: $spinner-color;
+    @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      animation: 1s linear infinite spin;
+
+}
+.waiting_title{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+

@@ -1,0 +1,41 @@
+.gamers_list {
+    @include font($size: 2rem, $height: 2.4rem);
+    flex-grow: 1;
+    width: 350px;
+
+
+}
+
+.gamers_title {
+    align-self: flex-start;
+}
+
+.gamers {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 70%;
+    height: 400px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    margin: 50px 0;
+    
+
+}
+
+.gamer {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    background-color: $gamers-color;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px #b99733;
+
+}

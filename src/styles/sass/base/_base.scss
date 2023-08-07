@@ -1,0 +1,63 @@
+html {
+  font-size: 10px;
+  @extend %font-main;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color;
+  flex-direction: column;
+}
+
+img {
+  height: 400px;
+}
+h1 {
+  @include font($size: 3.2rem, $weight: bold, $height: 3.8rem);
+  color: $input-color;
+  margin-bottom: 25px;
+}
+
+h2 {
+  @include font($size: 2.8rem, $height: 2.9rem);
+  color: $input-color;
+}
+h3 {
+  @include font($size: 2.2rem, $weight: bold, $height: 2.6rem);
+  color: $input-color;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  padding: 5px 15px;
+  border-radius: 1.2rem;
+  background-color: $buttons-color;
+  color: #ffffff;
+  border: 1px solid $buttons-borderColor;
+  cursor: pointer;
+  width: 90px;
+  box-shadow: 1px 1px 2px 2px $input-color;
+}
+
+button:hover {
+  background-color: $buttons-borderColor;
+  transform: scale(1.03);
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px 2px $input-color;
+  transform: scale(1);
+}
+

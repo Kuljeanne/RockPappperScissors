@@ -1,0 +1,67 @@
+.login_app {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.login_title{
+    color: $input-color;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    padding: 25px;
+    border: 1px solid $input-color;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px;
+    position: relative;
+}
+
+.form-field {
+    position: relative;
+}
+.login_input{
+    outline: none;
+    border: 1px solid $input-color;
+    background-color: $background-color;
+    border-radius: 5px;
+    padding:8px;
+    height: 20px;
+    width: 200px;
+    @include font($size: 1.6rem, $height: 2rem);
+}
+.login_input:focus{
+    box-shadow: 0 0 1px 1px $input-color;
+}
+
+.login_label {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    box-shadow: 0 0 1px 1px $background-color;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: $background-color;
+    color: $input-color;
+    padding-left: 2px;
+    padding-right: 2px;
+    @include font($size: 1.6rem, $height: 2rem);
+
+}
+
+.error{
+    position: absolute;
+    top: 119px;
+    left: 35px;
+    color: #ff0000;
+}
+
+.error-border{
+    border-color: #ff0000;;
+    box-shadow: 0 0 1px 1px #ff0000;;
+}

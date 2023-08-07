@@ -1,0 +1,16 @@
+//Abstract
+@import "sass/abstract/constants";
+@import "sass/abstract/mixins";
+@import "sass/abstract/placeholders";
+
+//Base
+@import "sass/base/base";
+
+
+//Components
+@import "sass/components/login";
+@import "sass/components/lobby";
+@import "sass/components/waitingGame";
+@import "sass/components/move";
+@import "sass/components/result";
+

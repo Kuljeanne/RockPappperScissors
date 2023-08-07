@@ -1,0 +1,28 @@
+.result_title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.result_wrapper{
+    display: flex;
+    column-gap: 40px;
+    width: 800px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 60px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.win_img{
+    height: 280px;
+}
+
+.buttons button{
+    width: 200px;
+    height: 40px;
+    @include font($size: 1.6rem, $height: 2rem);
+
+}
